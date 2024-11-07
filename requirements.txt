@@ -2,3 +2,4 @@ gradio
 transformers
 Pillow
 torch
+gunicorn
