@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: photoanalysis
+    plan: free
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:demo --bind 0.0.0.0:$PORT --workers 1"
